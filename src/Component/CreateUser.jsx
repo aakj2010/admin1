@@ -2,8 +2,11 @@ import { useFormik } from "formik";
 import axios from "axios";
 import React from "react";
 import { env } from './config';
+import { useNavigate } from "react-router-dom";
 
 function CreateUser() {
+    const navigate = useNavigate()
+
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -29,6 +32,7 @@ function CreateUser() {
         onSubmit: async (values) => {
           let user = await axios.post(`${env.api}/user`,values);
           alert("User Created")
+          navigate("/portal/users")
         }
     });
     return (
