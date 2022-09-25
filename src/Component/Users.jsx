@@ -1,7 +1,8 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { env } from './config';
+import { env } from "./config"
 
 function Users() {
 
@@ -11,7 +12,7 @@ function Users() {
     useEffect(() => {
         loadData()
     }, [])
-
+    
     let loadData = async () => {
         setLoading(true)
         let users = await axios.get("http://localhost:3000/users");
