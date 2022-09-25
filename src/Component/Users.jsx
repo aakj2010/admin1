@@ -15,7 +15,7 @@ function Users() {
     
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("http://localhost:3000/users");
+        let users = await axios.get(`${env.api}/users`);
         console.log(users);
         setUsers(users.data)
         setLoading(false)
