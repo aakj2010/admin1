@@ -92,9 +92,9 @@ function Users() {
                                                 <td>{user.startDate}</td>
                                                 <td>${user.salary}</td>
                                                 <td>
-                                                    <Link to={`/portal/users/${user.id}`} className="btn btn-sm btn-primary mr-2 mb-1"> View </Link>
-                                                    <Link to={`/portal/users/edit/${user.id}`} className="btn btn-sm btn-warning mr-2 mb-1"> Edit </Link>
-                                                    <button onClick={() => userDelete(user.id)} className="btn btn-sm btn-danger mr-2"> Delete </button>
+                                                    <Link to={`/portal/users/${user._id}`} className="btn btn-sm btn-primary mr-2 mb-1"> View </Link>
+                                                    <Link to={`/portal/users/edit/${user._id}`} className="btn btn-sm btn-warning mr-2 mb-1"> Edit </Link>
+                                                    <button onClick={() => userDelete(user._id)} className="btn btn-sm btn-danger mr-2"> Delete </button>
                                                 </td>
                                             </tr>
                                         })
