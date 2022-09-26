@@ -1,3 +1,3 @@
 export const env ={
-    api : "https://nodejsclassb37.herokuapp.com"
+    api : "https://akj1nodeapp.herokuapp.com/"
 }
