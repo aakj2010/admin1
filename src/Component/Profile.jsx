@@ -8,6 +8,7 @@ function Profile() {
     const [name, setName] = useState("")
     let changeProfile = () => {
         context.setUsername(name)
+        setName("")
     }
     return (
         <div className='container'>
