@@ -30,7 +30,7 @@ function CreateUser() {
             return errors;
         },
         onSubmit: async (values) => {
-          let user = await axios.post(`${env.api}/user`,values);
+          await axios.post(`${env.api}/user`,values);
           alert("User Created")
           navigate("/portal/users")
         }

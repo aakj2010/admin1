@@ -52,7 +52,7 @@ function Products() {
                         <div class="spinner-border" role="status">
                             {/* <span class="visually-hidden">Loading...</span> */}
                         </div>
-                    </div>) : <div class="card-body">
+                    </div>) : ( <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
@@ -93,7 +93,7 @@ function Products() {
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div> )
                 }
             </div>
         </div>

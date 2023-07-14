@@ -1,3 +1,4 @@
 export const env ={
-    api : "https://akj1nodeapp.herokuapp.com"
+    api :"http://localhost:3000"
+    // api : "https://akj1nodeapp.herokuapp.com"
 }

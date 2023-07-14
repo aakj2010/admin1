@@ -4,7 +4,7 @@ import Dashboard from './Component/Dashboard';
 import Users from './Component/Users';
 import Products from './Component/Products';
 import CreateUser from './Component/CreateUser';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateProduct from './Component/CreateProduct';
 import LogIn from './Component/LogIn';
 import Portal from './Component/Portal';
